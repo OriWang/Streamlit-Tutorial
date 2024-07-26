@@ -26,7 +26,7 @@ st.table(df)
 st.dataframe(df.style.highlight_max(axis=0, color="skyblue"))
 
 st.markdown("---")
-st.image(r"streamlit学习\flower.jpg", width=500, caption="花廊")
+st.image(r".\flower.jpg", width=500, caption="花廊")
 
 st.markdown("---")
 state = st.checkbox("learn streamlit", value=False, key=1)
