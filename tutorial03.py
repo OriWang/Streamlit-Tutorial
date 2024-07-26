@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+from PIL import Image
 
 st.title("Hi, I am a streamlit app.")
 st.subheader("Tutorial")
@@ -26,7 +27,8 @@ st.table(df)
 st.dataframe(df.style.highlight_max(axis=0, color="skyblue"))
 
 st.markdown("---")
-st.image(r".\flower.jpg", width=500, caption="花廊")
+flower_image = Image(r".\flower.jpg")
+st.image(flower_image, width=500, caption="花廊")
 
 st.markdown("---")
 state = st.checkbox("learn streamlit", value=False, key=1)
