@@ -27,7 +27,7 @@ st.table(df)
 st.dataframe(df.style.highlight_max(axis=0, color="skyblue"))
 
 st.markdown("---")
-flower_image = Image(r".\flower.jpg")
+flower_image = Image.open(r".\flower.jpg")
 st.image(flower_image, width=500, caption="花廊")
 
 st.markdown("---")
